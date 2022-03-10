@@ -1,0 +1,6 @@
+# Manage dotfiles
+Make home dir to a git repo, gitignore *, force add dotfiles.
+To avoid issues with other git projects:
+Rename ".git" to <your folder name>, for example ".dotfiles"
+Add alias: alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+Now you can manage your home git repo by using "dotfiles <git command>"
