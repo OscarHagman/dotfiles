@@ -880,40 +880,40 @@ mouse_bindings:
   # Highlight window damage information.
   #highlight_damage: false
 colors:
-  # COLORSCHEME: base16-gruvbox-dark-pale-256.yml
+  # COLORSCHEME: base16-horizon-dark-256.yml
   # Default colors
   primary:
     # hard contrast: background = '0x1d2021'
-    background: '0x262626'
-    foreground: '0xdab997'
+    background: '0x1c1e26'
+    foreground: '0xcbced0'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0x262626'
-    cursor: '0xdab997'
+    text: '0x1c1e26'
+    cursor: '0xcbced0'
 
   # Normal colors
   normal:
   # Bright colors
-    black: '0x262626'
-    red: '0xd75f5f'
-    green: '0xafaf00'
-    yellow: '0xffaf00'
-    blue: '0x83adad'
-    magenta: '0xd485ad'
-    cyan: '0x85ad85'
-    white: '0xdab997'
+    black: '0x1c1e26'
+    red: '0xe93c58'
+    green: '0xefaf8e'
+    yellow: '0xefb993'
+    blue: '0xdf5273'
+    magenta: '0xb072d1'
+    cyan: '0x24a8b4'
+    white: '0xcbced0'
 
   # Bright colors
   bright:
-    black: '0x8a8a8a'
-    red: '0xd75f5f'
-    green: '0xafaf00'
-    yellow: '0xffaf00'
-    blue: '0x83adad'
-    magenta: '0xd485ad'
-    cyan: '0x85ad85'
-    white: '0xebdbb2'
+    black: '0x6f6f70'
+    red: '0xe93c58'
+    green: '0xefaf8e'
+    yellow: '0xefb993'
+    blue: '0xdf5273'
+    magenta: '0xb072d1'
+    cyan: '0x24a8b4'
+    white: '0xe3e6ee'
 
   dim:
     black: '0x31363b'
@@ -936,9 +936,9 @@ colors:
     text: '0x000000'
     background: '0xb3d7ff'
   indexed_colors:
-    - {index: 16, color: '0xff8700'}
-    - {index: 17, color: '0xd65d0e'}
-    - {index: 18, color: '0x3a3a3a'}
-    - {index: 19, color: '0x4e4e4e'}
-    - {index: 20, color: '0x949494'}
-    - {index: 21, color: '0xd5c4a1'}
+    - {index: 16, color: '0xe58d7d'}
+    - {index: 17, color: '0xe4a382'}
+    - {index: 18, color: '0x232530'}
+    - {index: 19, color: '0x2e303e'}
+    - {index: 20, color: '0x9da0a2'}
+    - {index: 21, color: '0xdcdfe4'}
