@@ -30,14 +30,17 @@ def install_apt_packages():
     for package in pk.APT_PACKAGES:
         if pk.DEPEND in package:
             for dependency in package[pk.DEPEND]:
+                print(f'\ninstalling dependency "{dependency}"\n')
                 os.system(f'sudo apt install {dependency} -y')
         
         if pk.INSTALL_METHOD in package:
             if package[pk.INSTALL_METHOD] == pk.INSTALL_METHOD_PPA:
+                print(f'\ninstalling {package["name"]}\n')
                 os.system(f'sudo add-apt-repository --update {package[pk.INSTALL_METHOD_PPA]} -y')
                 os.system(f'sudo apt install {package["name"]} -y')
             elif package[pk.INSTALL_METHOD] == pk.INSTALL_METHOD_CMD:
-                print(package[pk.INSTALL_METHOD_CMD])
+                print(f'installing package["name"]')
+                os.system(package[pk.INSTALL_METHOD_CMD])
         else:
             os.system(f'sudo apt install {package["name"]} -y')
 
