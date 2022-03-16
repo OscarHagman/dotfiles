@@ -13,6 +13,7 @@ PKG_ARGS = "package_arguments"
 
 # PACKAGES
 # apt
+ALACRITTY = {"name": "alacritty"}
 AUDACITY = {"name": "audacity"}
 BLUEMAN = {"name": "blueman"}
 DISCORD = {"name": "discord"}
@@ -65,6 +66,7 @@ alacritty_colorscheme = {
 }
 
 APT_PACKAGES = [
+    ALACRITTY,
     ANSIBLE,
     DOCKER,
     AUDACITY,
@@ -96,4 +98,10 @@ SNAP_PACKAGES = [
 
 THIRD_PARTY_PACKAGES = [
     alacritty_colorscheme
+]
+
+ALL_PACKAGES = [
+    APT_PACKAGES,
+    SNAP_PACKAGES,
+    THIRD_PARTY_PACKAGES
 ]
