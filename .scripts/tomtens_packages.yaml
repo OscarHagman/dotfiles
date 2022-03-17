@@ -1,0 +1,24 @@
+apt_packages:
+- name: alacritty
+
+- name: ansible
+  install_method: ppa
+  dependencies:
+  - software-properties-common
+  ppa: ppa:ansible/ansible
+
+- name: docker
+  install_method: command
+  dependencies:
+  - curl
+  command: curl -fsSL https://get.docker.com | sh
+
+snap_packages:
+- name: code
+  package_arguments: --classic
+
+- name: teams
+- name: spotify
+
+third_party_packages:
+- name: alacritty-scheme

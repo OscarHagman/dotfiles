@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 
-from random import choices
+from importlib.abc import Loader
 import tomtens_pkgs as pk
 import os
 import sys
 import argparse
+import yaml
 
 parser = argparse.ArgumentParser()
 # parser.add_argument("-li", "--list-installed", help="List all installed packages")
@@ -156,5 +157,19 @@ def main():
             print("\nNo packages were selected")
             main()
 
+def try_yaml():
+    # READ YAML
+    # with open("tomtens_packages.yaml", "r") as yaml_file:
+    #     data = yaml.safe_load(yaml_file)
+    #     print(data)
+
+    # WRITE YAML
+    # users = [{'name': 'John Doe', 'occupation': 'gardener'},
+    #         {'name': 'Lucy Black', 'occupation': 'teacher'}]
+
+    # with open('users.yaml', 'w') as f:
+    #     data = yaml.dump(users, f)
+
 if __name__ == "__main__":
-    main()
+    #main()
+    try_yaml()
